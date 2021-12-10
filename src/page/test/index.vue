@@ -26,7 +26,7 @@ export default {
      *  count: store.count
      * }
      * 这样修改会造成数据不被监听
-     * 方法是可以以这种方法去用的
+     * actions是可以这么去用的
      * */ 
     return {
       store,
