@@ -11,7 +11,9 @@
 import { useStore } from '/@/store/test';
 
 export interface TestStore {
-  count: number
+  count: number,
+  countPow2: number,
+  countPlus: EventTarget,
 }
 
 export default {
