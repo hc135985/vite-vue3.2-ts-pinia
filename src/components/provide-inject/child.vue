@@ -9,8 +9,8 @@ import { inject } from 'vue';
 export default {
   name: 'Child',
   setup() {
-    const parentName = inject('parentName', 'defaultName');
-    const count = inject('count', 0);
+    const parentName = <string> inject('parentName', 'defaultName');
+    const count = <number> inject('count', 0);
     const addCount = inject('addCount');
     return {
       parentName,

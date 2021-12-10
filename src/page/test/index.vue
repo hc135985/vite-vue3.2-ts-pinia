@@ -10,10 +10,14 @@
 <script lang="ts">
 import { useStore } from '/@/store/test';
 
+export interface TestStore {
+  count: number
+}
+
 export default {
   name: 'Test',
   setup() {
-    const store = useStore();
+    const store = <TestStore> useStore();
     /**
      * state的数据可以直接使用store.***，不能以下面的形式
      * return {
